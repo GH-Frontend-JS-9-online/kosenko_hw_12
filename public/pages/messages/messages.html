@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/styles/messages.css">
+    <title>Messages</title>
+</head>
+<body>
+    <header>
+        <div class="top__menu">
+            <div class="logo">
+                <a href="#"><img class="logo_img" src="../../assets/images/logo.png" alt="virtus"></a>
+                <h1>Virtus</h1>
+            </div>
+            <div class="menu__user">
+                <input class="menu__btn" type="button" value="Add">
+                <img src="../../assets/images/top-menu/magnify.png" alt="magnify">
+                <img src="../../assets/images/top-menu/bell.png" alt="bell">
+                <div class="menu__user-photo">
+                    <img class="menu__photo" src="../../assets/images/top-menu/photo-1.png" alt="photo">
+                    <img class="menu__img" src="../../assets/images/top-menu/chevron-left.png" alt="left"> 
+                </div>
+            </div>
+        </div>
+        <div class="side__menu">
+            <a class="side__menu_link" href="#">
+                <img class="side__menu_img" src="../../assets/images/side-menu/home.svg" alt="home">
+            </a>
+            <a class="side__menu_link" href="#">
+                <img class="side__menu_img" src="../../assets/images/side-menu/menu (3).svg" alt="menu">
+            </a>
+            <a class="side__menu_link" href="#">
+                <img class="side__menu_img" src="../../assets/images/side-menu/trending-up.svg" alt="trending-up">
+            </a>
+            <a class="side__menu_link" href="#">
+                <img class="side__menu_img" src="../../assets/images/side-menu/email (2).svg" alt="email">
+            </a>
+            <a class="side__menu_link" href="#">
+                <img class="side__menu_img" src="../../assets/images/side-menu/account-multiple.svg" alt="account-multipleeff">
+            </a>
+        </div>
+    </header>
+    <section class="second__menu">
+        <div class="second__menu_items">
+            <p class="second__menu_text">
+                <img class="menu_img" src="../../assets/images/second-menu/inbox.png" alt="inbox">
+                Inbox (2)
+            </p>
+            <p class="second__menu_text second__menu_text_black">
+                <img class="menu_img" src="../../assets/images/second-menu/telegram.png" alt="sent">
+                Sent
+            </p>
+            <p class="second__menu_text second__menu_text_black">
+                <img class="menu_img" src="../../assets/images/second-menu/delete.png" alt="delete">
+                Trash
+            </p>
+        </div>
+        <div class="second__menu_items">
+            <p class="second__menu_text">Filter messages: </p>
+            <input class="second__menu_select" type="datetime" name="calendar" value="Date"> 
+            <!-- I think <input type="date"> more correctly for this field-->
+        </div>
+    </section>
+    <aside class="message-block">
+        <section class="inbox-block">
+            <input class="inbox-block_button" type="button" value="New conversation">
+        </section>
+        <section class="conversation-block">
+            <input class="conversation-block_message" type="text" name="message" placeholder="Write a message">
+        </section>
+        <section class="about-block">
+            <div class="about-user_info">
+                <img class="about-block_photo" src="../../assets/images/message-block/photo-2.png" alt="photo">
+                <h4 class="about-block_text_size_l">Lyall Roach</h4>
+                <p class="about-block_text_s about-block_text_align">UX/UI Designer</p>
+                <p class="about-block_text_s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+            </div>
+            <div class="about-contact_info">
+                <div>
+                    <p class="about-block_text_s about-block_text_align">Email</p>
+                    <p class="about-block_text_m">lyallroach@gmail.com</p>
+                </div>
+                <div>
+                    <p class="about-block_text_s about-block_text_align">Phone</p>
+                    <p class="about-block_text_m">+48 500 400 300</p>
+                </div>
+                <div>
+                    <p class="about-block_text_s about-block_text_align">Adress</p>
+                    <p class="about-block_text_m">65 Lorem St, Warsaw, PL</p>
+                </div>
+                <div>
+                    <p class="about-block_text_s about-block_text_align">Organization</p>
+                    <p class="about-block_text_m">Symu.co</p>
+                </div>
+            </div>
+        </section>
+    </aside>
+</body>
+</html>
