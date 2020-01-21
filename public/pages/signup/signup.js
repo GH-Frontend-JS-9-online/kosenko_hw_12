@@ -1,4 +1,4 @@
-const requestURL = 'http://localhost:3000/api/users';
+const requestURL = 'https://geekhub-frontend-js-9.herokuapp.com/api/users/';
 
 let userName = document.getElementById('name');
 let userEmail = document.getElementById('email');

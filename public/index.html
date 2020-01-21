@@ -9,17 +9,26 @@
     <title>VIRTUS</title>
 </head>
 <body>
-    <h2>Log In</h2>
-    <a href="pages/signup/signup.html">Not a member?</a>
-    <form id="form" name="form">
-        <input type="email" name="email" id="email" placeholder="Email...">
-        <input type="password" name="password" id="password" placeholder="Password...">
-        <input type="button" value="Log In" id="signin">
-    </form>
-    <a href="pages/reset/reset.html">Forgot password?</a>
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img class="logo_img" src="../../assets/images/logo.png" alt="virtus"></a>
+            <h1>Virtus</h1>
+        </div>
+    </header>
+    <div class="login-block">
+        <h2 class="title_text_align">Log In</h2>
+        <a class="link" href="pages/signup/signup.html">Not a member?</a>
+        <form class="form-block" id="form" name="form">
+            <input class="input-block" type="email" name="email" id="email" placeholder="Email...">
+            <input class="input-block" type="password" name="password" id="password" placeholder="Password...">
+            <input class="button" type="button" value="Log In" id="signin">
+            <p id="errorMessage" class="errorMessage"></p>
+        </form>
+        <a class="link" href="pages/reset/reset.html">Forgot password?</a>
+    
+        <!-- <a href="pages/messages/messages.html">Messages</a> -->
+    </div>
 
-    <a href="pages/messages/messages.html">Messages</a>
-
-    <script type = "module" src="main.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 </html>

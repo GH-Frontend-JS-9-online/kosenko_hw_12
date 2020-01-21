@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/styles/main.css">
+    <title>VIRTUS</title>
 </head>
 <body>
-    <h2>Sign Up</h2>
-    <a href="../../index.html">Existing member?</a>
-    <form id="form" name="form">
-        <input type="text" name="name" id="name" placeholder="Name...">
-        <input type="email" name="email" id="email" placeholder="Email...">
-        <input type="password" name="password" id="password" placeholder="Password...">
-        <!-- <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm password..."> -->
-        <input type="button" value="Sign Up" id="signup">
-    </form>
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img class="logo_img" src="../../assets/images/logo.png" alt="virtus"></a>
+            <h1>Virtus</h1>
+        </div>
+    </header>
+    <div class="login-block">
+        <h2 class="title_text_align">Sign Up</h2>
+        <a class="link" href="../../index.html">Existing member?</a>
+        <form class="form-block" id="form" name="form">
+            <input class="input-block" type="text" name="name" id="name" placeholder="Name...">
+            <input class="input-block" type="email" name="email" id="email" placeholder="Email...">
+            <input class="input-block" type="password" name="password" id="password" placeholder="Password...">
+            <!-- <input class="input-block" type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm password..."> -->
+            <input class="button" type="button" value="Sign Up" id="signup">
+        </form>
+    </div>
 
     <script src="signup.js"></script>
 </body>

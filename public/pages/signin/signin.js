@@ -1,4 +1,4 @@
-const requestURL = 'http://localhost:3000/api/users/login';
+const requestURL = 'https://geekhub-frontend-js-9.herokuapp.com/api/users/login';
 
 let userEmail = document.getElementById('email');
 let userPassword = document.getElementById('password');
@@ -29,6 +29,11 @@ function sendRequest(method, requestURL) {
         headers: headers
     }).then(response => {
         if (response.ok) {
+            console.log(response.headers.get('X-Auth-Token'));
+            let userToken = response.headers.get('X-Auth-Token');
+            // let cookies = "user=" + userToken;
+            // document.cookie = cookies; 
+            window.localStorage.setItem('token', userToken);
             return response.json();
         }
   
@@ -43,10 +48,16 @@ function sendRequest(method, requestURL) {
 signin.onclick = () => {
     sendRequest('POST', requestURL)
         .then(data => {
-            console.log(data);
-            let div = document.createElement("div");
-            div.innerHTML = "Hello, " + data.name;
-            form.after(div);
+          console.log(data);
+          window.location.href = 'pages/messages/messages.html';
+          // let div = document.createElement("div");
+          // div.innerHTML = "Hello, " + data.name;
+          // form.after(div);
         })
-        .catch(err => console.log(err))
+        .catch(err => {
+          console.log(err);
+          let errorMessage = document.getElementById("errorMessage");
+          errorMessage.innerHTML = "Oops, looks like email or password is incorrect. Please try again.";
+          // form.after(div);
+        })
 }

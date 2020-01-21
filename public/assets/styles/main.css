@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-color: #2c2f3e;
+    color: #fff;
+}
+
+.logo {
+    font-size: 0;
+}
+
+.logo_img {
+    height: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 50px;
+    filter: drop-shadow(0px 3px 40px rgba(23,24,32,0.2));
+    background-color: #2f3242;
+}
+
+.login-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    border: 2px solid #2196f3;
+    border-radius: 24px;
+    margin: 50px auto;
+}
+
+.link {
+    color: #fff;
+}
+
+.link:hover {
+    color: #2196f3;
+}
+
+.button {
+    width: 120px;
+    height: 35px;
+    border-radius: 24px;
+    background-color: rgba(33,150,243,0);
+    border: 2px solid #2196f3;
+    color: #fff;
+    font-size: 18px;
+}
+
+.button:hover {
+    background-color: #2196f3;
+    border: 2px solid rgba(156,161,178,0.3);
+}
+
+.input-block {
+    height: 35px;
+    border-radius: 10px;
+    background-color: #404359;
+    background-position: 575px;
+    border: 1px solid rgba(156,161,178,0.3);
+    font-size: 16px;
+    color: #9ca1b2;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.form-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+.title_text_align {
+    font-size: 40px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.errorMessage {
+    color: #F00;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-right: 10px;
+}
